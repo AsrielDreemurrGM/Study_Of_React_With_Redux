@@ -18,7 +18,7 @@ const carrinhoSlice = createSlice({
       const jogo = action.payload
 
       if (state.itens.find((game) => game.id === jogo.id)) {
-        alert('Item Já Adicionado Está No Carrinho')
+        alert('Item Já Está No Carrinho')
       } else {
         state.itens.push(jogo)
       }
